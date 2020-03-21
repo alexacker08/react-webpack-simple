@@ -1,5 +1,5 @@
 {
-  "name": "BasicApp",
+  "name": "WebpackReactApp",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,7 +8,8 @@
     "dev": "webpack-dev-server",
     "clean": "rimraf dist",
     "build": "NODE_ENV=production && npm run clean && webpack -p",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bundle-loader": "^0.5.6",
