@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "homepage":"https://alexacker08.github.io/react-webpack-simple",
   "scripts": {
     "dev": "webpack-dev-server",
     "clean": "rimraf dist",
-    "build": "NODE_ENV=production && npm run clean && webpack -p"
+    "build": "NODE_ENV=production && npm run clean && webpack -p",
+    "deploy":"npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "bundle-loader": "^0.5.6",
