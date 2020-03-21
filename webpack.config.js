@@ -38,7 +38,7 @@ const config = {
     output:{
         path:BUILD_DIR,
         filename:'[name].[hash].js',
-        publicPath:''
+        publicPath:'/react-webpack-simple'
     },
     module:{
         rules:[
