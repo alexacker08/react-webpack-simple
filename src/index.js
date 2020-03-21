@@ -6,7 +6,7 @@ import './index.css';
 import './App.css';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/react-webpack-simple">
     <App />
   </BrowserRouter>,
   document.getElementById('root')
